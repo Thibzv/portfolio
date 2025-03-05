@@ -1,0 +1,28 @@
+:root {
+  --ff-base: "MADE TOMMY", sans-serif;
+
+  --fs-xl: 9rem;
+  --fs-lg: 2rem;
+  --fs-base: 1.6rem;
+
+  --fw-light: 300;
+  --fw-black: 900;
+}
+
+@font-face {
+  font-family: "MADE TOMMY";
+  src: url("/assets/MADETOMMY-Black.woff2") format("woff2"),
+    url("/assets/MADETOMMY-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MADE TOMMY";
+  src: url("/assets/MADETOMMY-Light.woff2") format("woff2"),
+    url("/assets/MADETOMMY-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
