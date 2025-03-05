@@ -48,7 +48,3 @@ Développeur web full-stack, je conçois des solutions digitales performantes et
 ## Auteur
 
 Copyright © 2025 Thibault Vigneron
-
-```
-
-```
