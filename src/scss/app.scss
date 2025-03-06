@@ -110,16 +110,21 @@
   }
 
   &__socials {
-    --gap: 3.2rem;
-
     display: flex;
     align-items: stretch;
     height: 100%;
-    gap: var(--gap);
+    gap: 3.2rem;
 
     & > li {
       & > a {
         transition: transform 300ms;
+
+        & > span {
+          display: grid;
+          place-items: center;
+          height: 100%;
+          width: 100%;
+        }
 
         &:hover,
         &:focus {
@@ -129,7 +134,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      --gap: 1.6rem;
+      gap: 1.6rem;
     }
   }
 
