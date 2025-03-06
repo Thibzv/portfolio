@@ -7,6 +7,28 @@
 
   --fw-light: 300;
   --fw-black: 900;
+
+  @media screen and (max-width: 1240px) {
+    --fs-xl: 7rem;
+    --fs-lg: 1.9rem;
+    --fs-base: 1.5rem;
+  }
+
+  @media screen and (max-width: 992px) {
+    --fs-xl: 5.6rem;
+    --fs-lg: 1.8rem;
+    --fs-base: 1.4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    --fs-xl: 4.6rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    --fs-xl: 3.6rem;
+    --fs-lg: 1.6rem;
+    --fs-base: 1.3rem;
+  }
 }
 
 @font-face {

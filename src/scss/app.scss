@@ -24,6 +24,14 @@
 
   font-size: 2.4rem;
   padding: var(--padding);
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 }
 
 .tv {
@@ -81,12 +89,24 @@
         margin-bottom: 2rem;
       }
     }
+
+    @media screen and (max-width: 480px) {
+      margin: 2.4rem 0 var(--padding);
+    }
   }
 
   &__nav {
     --height: 6rem;
     order: 4;
     height: var(--height);
+
+    @media screen and (max-width: 768px) {
+      --height: 5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      --height: 4rem;
+    }
   }
 
   &__socials {
@@ -107,6 +127,10 @@
         }
       }
     }
+
+    @media screen and (max-width: 768px) {
+      --gap: 1.6rem;
+    }
   }
 
   &__right {
@@ -114,6 +138,23 @@
     flex-direction: row;
     gap: var(--gap);
     max-height: 100vh;
+
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      bottom: -40rem;
+      right: 0;
+      z-index: -1;
+      height: 100vh;
+      opacity: 1;
+      gap: var(--gap);
+      width: fit-content;
+      transform: rotate(30deg);
+    }
+
+    @media screen and (max-width: 480px) {
+      bottom: -35rem;
+      transform: rotate(35deg);
+    }
   }
 
   &__marquee {
@@ -165,6 +206,38 @@
       height: 100%;
       object-fit: contain;
     }
+
+    @media screen and (max-width: 480px) {
+      --padding: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 1240px) {
+    --padding: 8rem;
+    --width: 9rem;
+    --gap: 10rem;
+
+    gap: var(--gap);
+  }
+
+  @media screen and (max-width: 992px) {
+    --padding: 6rem;
+    --width: 8rem;
+    --gap: 8rem;
+
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 768px) {
+    --padding: 3.6rem;
+    --gap: 5rem;
+    --width: 8rem;
+    padding: var(--padding);
+  }
+
+  @media screen and (max-width: 480px) {
+    --width: 7rem;
+    --padding: 2.8rem;
   }
 }
 
